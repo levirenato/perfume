@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.png">
+    <title>Kussuado</title>
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="#main">
+            <img src="assets/logo.png" alt="logo Kussuado" width="24" height="32">
+            <h3>KUSSUADO</h3>
+        </a>
+        <lu class="nav-menu">
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#contate-nos">Faça Parte</a>
+            <a class="nav-login" href="#">Login</a>
+        </lu>
+    </header>
+    <main id="main">
+        <span class="unmuted" id="unmuted" 
+            onclick="document.getElementById('video').muted = false;
+            document.getElementById('unmuted').style.display = 'none';">
+            <i class="fa fa-volume-up"></i>
+        </span>
+        
+            <video id="video" width="100%" autoplay playsinline muted>
+                <source src="assets/comercial.mp4" type="video/mp4">
+            </video>        
+            <aside>
+                <div><h2>SEJA <span>FORTE</span>,</h2>
+                    <h2>SEJA <span>SELVAGEM</span>,</h2>
+                    <h2>SEJA <span>SEDUTOR</span>.</h2>
+                    <h3>Uma fragrancia para quebrar as correntes e libertar seu <span>Alfa</span> interior.</h3>
+                    <button type="button">SEJA MACHO</button>
+                </div>
+                
+            </aside>  
+    </main>
+    <section id="como-funciona" class="details-section">
+        <div class="content">
+            <h1>Como Funciona?</h1>
+                <h3>A composição agressiva do Kussuado tem a capacidade de libertar você</h3>
+            
+        </div>
+        <div class="content-flux">
+            <div>
+                <img src="assets/forte.jpg" alt="">
+                    <h2>Forte
+                        <h3>Feita com extrato de Baobá,</h3>
+                        <h3>você vai recuperar sua virilidade</h3>
+                    </h2>
+                </img>
+            </div>
+            <hr>
+            <div>
+                <img src="assets/selvagem.jpg" alt="">
+                    <h2>Selvagem
+                        <h3>Com o uso prolongado sem duvidas</h3>
+                        <h3>seu lado selvagem vai aflorar</h3>
+                    </h2>
+                </img>
+            </div>
+            <hr>
+            <div>
+                <img src="assets/sedutor.png" alt="">
+                    <h2>Sedutor
+                        <h3>Comprovado cientificamente eficacia</h3>
+                        <h3>de 90% na produção de feromonios</h3>
+                    </h2>
+                </img>
+            </div>
+        </div>
+    </section>
+    <section id="avaliacoes" class="avaliacoes">
+        <h1>Avaliações</h1>
+        <h3>Lista de famosos que usam a fragrância de Suellen Cristina</h3>
+        <ul>
+            <li><img src="famosos/italosena.jpeg" alt="" width="150px" height="225px"></li>
+            <li><img src="famosos/lula.jpg" alt="" width="150px" height="225px"></li>
+            <li><img src="famosos/manoelgomes.jpg" alt="" width="150px" height="225px"></li>
+            <li><img src="famosos/mikeohearn.jpg" alt="" width="150px" height="225px"></li>
+            <li><img src="famosos/thomasshelby.jpg" alt="" width="150px" height="225px"></li>
+        </ul>
+    </section>
+    <section id="contate-nos" class="contate-nos">
+        <h1>Contate-nos</h1>
+        <form>
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+            </div>
+            <div>
+                <label for="email">Enderesso de email:</label><br>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="desc">Descrição</label><br>
+                <input type="text" id="desc" name="desc">
+            </div>
+                <input id="enviar" type="button" value="Enviar">
+          </form>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="">
+                <i class="fa fa-instagram" style="font-size:24px"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-github" style="font-size:24px"></i>
+            </a>
+        </div>
+        <h3 class="direitos">&copy 2023  Levi Renato</h3>
+    </footer>
+</body>
+</html>
